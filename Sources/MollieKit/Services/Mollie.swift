@@ -1,5 +1,5 @@
 //
-//  MollieService.swift
+//  Mollie.swift
 //  App
 //
 //  Created by Biut Raj Thapa on 17/07/2020.
@@ -7,9 +7,9 @@
 
 import Vapor
 
-final class MollieService {
+final class Mollie {
 
-    func pay(_ req: Request, currency: CurrencyType, amountValue: Double, description: String, redirectUrl: String, metadata: CreatePaymentMetadata, apiKey: String) throws -> Future<Response> {
+    func createPayment(_ req: Request, currency: CurrencyType, amountValue: Double, description: String, redirectUrl: String, metadata: CreatePaymentMetadata, apiKey: String) throws -> Future<Response> {
         
         let paymentParameters = CreatePaymentParameters(amount: PaymentParametersAmount(currency: currency, value: amountValueDoubleToString(amount: amountValue)),
                                                         description: description,

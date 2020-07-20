@@ -34,9 +34,7 @@ public final class Mollie {
             print(req.content)
         }.flatMap(to: Response.self) { res in
             res.http.contentType = .json
-            print(res.content)
             return try res.content.decode(CreatePaymentResponse.self).map(to: Response.self) { res in
-                print(res._links.checkout.href)
                 return req.redirect(to: res._links.checkout.href)
             }
         }

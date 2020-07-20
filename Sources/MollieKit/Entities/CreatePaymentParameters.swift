@@ -28,8 +28,28 @@ public struct CreatePaymentMetadata: Content {
     let customerAddressLine1: String
     let customerAddressLine2: String
     let customerPostalCode: String
-    let CustomerCity: String
-    let CustomerCountry: String
+    let customerCity: String
+    let customerCountry: String
+    
+    init(email: String,
+         phone: String,
+         f_name: String,
+         l_name: String,
+         addressLine1: String,
+         addressLine2: String,
+         postalCode: String,
+         city: String,
+         country: String) {
+        self.customerEmail = email
+        self.customerPhoneNumber = phone
+        self.customerFirstName = f_name
+        self.customerLastName = l_name
+        self.customerAddressLine1 = addressLine1
+        self.customerAddressLine2 = addressLine2
+        self.customerPostalCode = postalCode
+        self.customerCity = city
+        self.customerCountry = country
+    }
 }
 
 

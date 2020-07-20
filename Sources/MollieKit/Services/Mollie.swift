@@ -8,8 +8,13 @@
 import Vapor
 
 public final class Mollie {
+    public let apiKey: String
+    
+    public init(apiKey: String) {
+        self.apiKey = apiKey
+    }
 
-    public func createPayment(_ req: Request, currency: CurrencyType, amountValue: Double, description: String, redirectUrl: String, metadata: CreatePaymentMetadata, apiKey: String) throws -> Future<Response> {
+    public func createPayment(_ req: Request, currency: CurrencyType, amountValue: Double, description: String, redirectUrl: String, metadata: CreatePaymentMetadata) throws -> Future<Response> {
         
         let paymentParameters = CreatePaymentParameters(amount: PaymentParametersAmount(currency: currency, value: amountValueDoubleToString(amount: amountValue)),
                                                         description: description,

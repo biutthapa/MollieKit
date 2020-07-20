@@ -14,7 +14,7 @@ struct CreatePaymentResponse: Content {
     let amount: CreatePaymentResponseAmount
     let description: String
     let method: String?
-    let metadata: CreatePaymentMetadata
+    let metadata: [String: String]?
     let status: String
     let isCancelable: Bool
     let expiresAt: Date

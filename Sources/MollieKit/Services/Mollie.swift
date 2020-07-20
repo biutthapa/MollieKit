@@ -14,7 +14,12 @@ public final class Mollie {
         self.apiKey = apiKey
     }
 
-    public func createPayment(_ req: Request, currency: CurrencyType, amountValue: Double, description: String, redirectUrl: String, metadata: CreatePaymentMetadata) throws -> Future<Response> {
+    public func createPayment(_ req: Request,
+                              currency: CurrencyType,
+                              amountValue: Double,
+                              description: String,
+                              redirectUrl: String,
+                              metadata: [String: String]?) throws -> Future<Response> {
         
         let paymentParameters = CreatePaymentParameters(amount: PaymentParametersAmount(currency: currency, value: amountValueDoubleToString(amount: amountValue)),
                                                         description: description,

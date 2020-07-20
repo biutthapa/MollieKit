@@ -1,7 +1,8 @@
 # MollieKit
 
 
-### Mollie API client for Server Side Swift.
+### Mollie API client for Server-Side Swift.
+
 
 ## Installation
 To start using MollieKit, in your `Package.swift`, add the following

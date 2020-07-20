@@ -11,7 +11,7 @@ public enum CurrencyType: String, Content {
     case EUR
 }
 
-enum PaymentMethodType: String, Content {
+public enum PaymentMethodType: String, Content {
     case applepay
     case bancontact
     case creditcard

@@ -7,7 +7,7 @@
 
 import Vapor
 
-enum CurrencyType: String, Content {
+public enum CurrencyType: String, Content {
     case EUR
 }
 

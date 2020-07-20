@@ -20,7 +20,7 @@ struct PaymentParametersAmount: Content {
     let value: String
 }
 
-struct CreatePaymentMetadata: Content {
+public struct CreatePaymentMetadata: Content {
     let customerEmail: String
     let customerPhoneNumber: String
     let customerFirstName: String

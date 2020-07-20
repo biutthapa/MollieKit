@@ -7,7 +7,7 @@
 
 import Vapor
 
-final class Mollie {
+public final class Mollie {
 
     func createPayment(_ req: Request, currency: CurrencyType, amountValue: Double, description: String, redirectUrl: String, metadata: CreatePaymentMetadata, apiKey: String) throws -> Future<Response> {
         

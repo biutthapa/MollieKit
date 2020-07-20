@@ -1,7 +1,7 @@
 # MollieKit
 
 
-### MollieKit is a package for using [Mollie](https://mollie.com) API for Server Side Swift Apps.
+### Mollie API client for Server Side Swift Apps.
 
 ## Installation
 To start using MollieKit, in your `Package.swift`, add the following

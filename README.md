@@ -18,3 +18,11 @@ Create the `Payment`
 let mollie = Mollie(apiKey: "your_API_key")
 let payment = mollie.createPayment(...)
 ~~~~
+
+## Whats Implemented
+
+* [x] Create Payment
+* [x] Checkout
+
+## TODO At some point
+* [ ] Orders

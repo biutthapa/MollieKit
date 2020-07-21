@@ -19,7 +19,7 @@ public final class Mollie {
                               amountValue: Double,
                               description: String,
                               redirectUrl: String,
-                              metadata: [String: String]?) throws -> Future<Response> {
+                              metadata: [[String: String]]?) throws -> Future<Response> {
         
         let paymentParameters = CreatePaymentParameters(amount: PaymentParametersAmount(currency: currency, value: amountValueDoubleToString(amount: amountValue)),
                                                         description: description,

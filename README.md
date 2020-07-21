@@ -57,6 +57,24 @@ let payment = mollie.createPayment(...)
 * [ ] List Shipments
 * [ ] Update Shipment
 ---
+### Subscriptions
+* [ ] Create Subscription
+* [ ] Get Subscription
+* [ ] Cancel Subscription
+* [ ] List Subscriptions
+* [ ] List all Subscriptions
+* [ ] List Subscription Payments
+* [ ] Update Subscription
+---
+### Customers
+* [ ] Create Customer
+* [ ] Get Customer
+* [ ] Update Customer
+* [ ] Delete Customer
+* [ ] List Customers
+* [ ] Create Customer Payment
+* [ ] List Customer Payment
+---
 ### Methods
 * [ ] List Payment Methods
 * [ ] List All Payment Methods
@@ -69,4 +87,10 @@ let payment = mollie.createPayment(...)
 ### Captures
 * [ ] Get Capture
 * [ ] List Captures
+---
+### Mandates
+* [ ] Create Mandate
+* [ ] Get Mandate
+* [ ] Revoke mandate
+* [ ] List mandates
 ---

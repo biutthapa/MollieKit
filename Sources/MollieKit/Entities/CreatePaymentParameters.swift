@@ -12,7 +12,7 @@ struct CreatePaymentParameters: Content {
     let description: String
     let redirectUrl: String
     let method: [PaymentMethodType]
-    let metadata: [String: String]?
+    let metadata: [String : [String : String]]?
 }
 
 struct PaymentParametersAmount: Content {

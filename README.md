@@ -25,7 +25,7 @@ let payment = mollie.createPayment(...)
 * [x] Create Payment
 * [x] Checkout
 
-## TODO
+## Coming Soon
 
 ### Payments
 * [ ] Get Payment

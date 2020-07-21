@@ -32,6 +32,8 @@ let payment = mollie.createPayment(...)
 * [ ] Update Payment
 * [ ] Cancel Payment
 * [ ] List Payments
+* [ ] Request Apple Pay Payment Session
+
 ---
 ### Orders
 * [ ] Create Order
@@ -75,22 +77,17 @@ let payment = mollie.createPayment(...)
 * [ ] Create Customer Payment
 * [ ] List Customer Payment
 ---
-### Methods
-* [ ] List Payment Methods
-* [ ] List All Payment Methods
-* [ ] Get Payment Method
----
 ### Chargebacks
 * [ ] Get Chargeback
 * [ ] List Chargebacks
----
-### Captures
-* [ ] Get Capture
-* [ ] List Captures
 ---
 ### Mandates
 * [ ] Create Mandate
 * [ ] Get Mandate
 * [ ] Revoke mandate
 * [ ] List mandates
+---
+### Invoices
+* [ ] Get Invoices
+* [ ] List Invoices
 ---

@@ -12,6 +12,8 @@ To start using MollieKit, in your `Package.swift`, add the following
 ~~~~
 
 ## Using the API
+
+### Payments
 Create the `Payment`
 
 ~~~~swift
